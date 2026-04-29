@@ -1,0 +1,21 @@
+select*
+from b99_d2_rn;
+
+--- how many distinct rows are there in each columb 
+--- how many detectives - 9
+--- how many ranks - 4
+--- how many crime types - 13
+--- how many borough - 5
+--- how many cases status type - 7
+--- how many ppl are ranked detective and who - 6 - Norm Scully, Jake Peralta, Amy Santiago, Charles Boyle, Rosa Diaz, Michael Hitchcock
+
+--- highest crime and lowest crime - (MURDER 164 max_crime) , (ROBERRY 28 min_crime)
+--- which borough has the highest and lowest crime - (BROOKLYN 282 lowest) , (QUEENS 295 highest)
+
+--- Dates first and last - 2013/01/01 to 2021/12/27 total 9 years
+
+--- which detective solved the most cases and which the lowest - Terry Jeffords highest	9019, Charles Boyle	lowest 4829
+--- which crime is commited the most and which is the least - MURDER 164 MOST, ROBERRY 28 LEAST
+--- Which detective solved the most murder cases- Terry Jeffords 24 most, Michael Hitchcock	8 least
+
+--- does more hours means more cases solved - yes Terry Jeffords 9955.5 hrs worked the most and solved most cases but Charles Boyle	5648.9 hr least work but no least cases solved
