@@ -1,0 +1,52 @@
+select*
+from b99_d2_rn;
+
+select count(distinct detective_name)
+from b99_d2_rn;
+
+select distinct detective_name, `rank`
+from b99_d2_rn
+where `rank` = 'Detective';
+
+select crime_type, count(*) as max_crime
+from b99_d2_rn
+group by crime_type
+order by max_crime ;
+
+select borough, count(*) as max_borough
+from b99_d2_rn
+group by borough
+order by max_borough ;
+
+select date_clean
+from b99_d2_rn
+order by date_clean desc;
+
+select detective_name, sum(cases_solved) as total_cases
+from b99_d2_rn
+group by detective_name
+order by total_cases desc;
+
+select detective_name, crime_type, count(*) as typecases
+from b99_d2_rn
+where detective_name = 'Terry Jeffords'
+group by detective_name, crime_type
+order by typecases desc;
+
+select crime_type, count(*) as mostcrime
+from b99_d2_rn
+group by crime_type
+order by mostcrime desc;
+
+select detective_name, crime_type, count(*) as mostsolvedmurders
+from b99_d2_rn
+where crime_type = 'MURDER'
+group by detective_name, crime_type
+order by mostsolvedmurders desc;
+
+select detective_name, sum(hours_worked) totalhrswrk
+from b99_d2_rn 
+group by detective_name
+order by totalhrswrk desc;
+
+
